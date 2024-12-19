@@ -1,52 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog CSS</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Blog CSS</div>
-        <div class="menu-icon">&#9776;</div>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul>
+          <ul><a href="#">Voce 1</a></li>
+          <ul><a href="#">Voce 2</a></li>
+          <ul><a href="#">Voce 3</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Optimizing CSS for Faster Page Loads</h1>
-        </section>
-        <article>
-            <h2>Optimizing CSS for Faster Page Loads</h2>
-            <p class="meta">Front-end • 1 Hour Ago</p>
-            <p>Not long ago I decided to improve the loading times of my website. It already loads pretty fast, but I knew there was still room for improvement and one of them was CSS loading. I will walk you through the process and show you how you can improve your load times as well.</p>
-            <p>To see how CSS affects the load time of a webpage we first have to know how the browser converts an HTML document into a functional webpage...</p>
-            <p class="read-time">3 Min Read</p>
-            <a href="#" class="read-full">Read Full →</a>
-        </article>
-        <article>
-            <h2>Css Grid</h2>
-            <p class="meta">Front-end • 1 Month Ago</p>
-            <img src="css-grid.png" alt="CSS Grid">
-            <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
-            <p class="read-time">12 Min Read</p>
-            <a href="#" class="read-full">Read Full →</a>
-        </article>
-        <article>
-            <h2>Colors in Css</h2>
-            <p class="meta">Front-end • 2 Months Ago</p>
-            <img src="colors-in-css.png" alt="Colors in CSS">
-            <p>Colors play a vital role in making a web page usable or not. In CSS, we can control the foreground and background color of an element with the color and background properties.</p>
-            <p class="read-time">8 Min Read</p>
-            <a href="#" class="read-full">Read Full →</a>
-        </article>
-        <article>
-            <h2>Css Variables</h2>
-            <p class="meta">Front-end • 2 Months Ago</p>
-            <img src="css-variables.png" alt="CSS Variables">
-            <p>CSS variables are custom properties that cascade normally and even inherit. They start with a reserved -- prefix, and there are no real rules about their value.</p>
-            <p class="read-time">10 Min Read</p>
-            <a href="#" class="read-full">Read Full →</a>
-        </article>
-    </main>
+    <div class="grid-container">
+        <div class="grid-container-1"><img src="main.png" alt=""></div>
+    </div>
 </body>
+    <main>
+      <article class="main">
+        <img src="images/main.png" alt="Main Article Image" />
+        <div class="main-article">
+          <p>Front-end · 1 Hour Ago</p>
+          <h1>Optimizing CSS for faster page loads</h1>
+          <p>
+            Not long ago I decided to improve the loading times of my website.
+            It already loads pretty fast, but I knew there was still room for
+            improvement and one of them was CSS loading. I will walk you through
+            the process and show you how you can improve your load times as
+            well.
+          </p>
+          <p>
+            To see how CSS affects the load time of a webpage we first have to
+            know how the browser converts an HTML document into a functional
+            webpage...
+          </p>
+          <footer>
+            <div class="time-to-read">3 Min Read</div>
+            <a href="#" class="read-full"> Read Full →</a>
+          </footer>
+        </div>
+      </article>
+
+      <aside>
+        <article>
+          <img src="images/img1.png" alt="CSS Grid" />
+          <div class="content">
+            <p>Front-end · 1 Month Ago</p>
+            <h2>Css Grid</h2>
+            <p>
+              The CSS Grid Layout Module offers a grid-based layout system, with
+              rows and columns, making it easier to design web pages without
+              having to use floats and positioning.
+            </p>
+            <footer>
+              <div class="time-to-read">12 Min Read</div>
+              <a href="#" class="read-full"> Read Full →</a>
+            </footer>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/img2.png" alt="Colors in CSS" />
+          <div class="content">
+            <p>Front-end · 2 Month Ago</p>
+            <h2>Colors in Css</h2>
+            <p>
+              Colors play a vital role in making a web page usable or not. In
+              CSS, we can control the foreground and background color of an
+              element with the color and background properties.
+            </p>
+            <footer>
+              <div class="time-to-read">8 Min Read</div>
+              <a href="#" class="read-full"> Read Full →</a>
+            </footer>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/img3.png" alt="CSS Variables" />
+          <div class="content">
+            <p>Front-end · 2 Month Ago</p>
+            <h2>Css Variables</h2>
+            <p>
+              CSS variables are custom properties that cascade normally and even
+              inherit. They start with a reserved -- prefix, and there are no
+              real rules about their value.
+            </p>
+            <footer>
+              <div class="time-to-read">10 Min Read</div>
+              <a href="#" class="read-full"> Read Full →</a>
+            </footer>
+          </div>
+        </article>
+      </aside>
+    </main>
+  </body>
 </html>
